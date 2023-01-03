@@ -30,7 +30,7 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 setup(
-    name='certifi',
+    name='certifi-cez',
     version=VERSION,
     description='Python package for providing Mozilla\'s CA Bundle.',
     long_description=open('README.rst').read(),
@@ -38,7 +38,7 @@ setup(
     author_email='me@kennethreitz.com',
     url='https://github.com/certifi/python-certifi',
     packages=[
-        'certifi',
+        'certifi-cez',
     ],
     package_dir={'certifi': 'certifi'},
     package_data={'certifi': ['*.pem', 'py.typed']},

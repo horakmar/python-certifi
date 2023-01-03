@@ -16,3 +16,7 @@ class TestCertifi(unittest.TestCase):
         assert os.path.exists(
             os.path.join(os.path.dirname(certifi.__file__), 'py.typed')
         )
+
+    def test_cez_ca_is_in(self) -> None:
+        content = certifi.contents()
+        assert "CEZ Root CA" in content
